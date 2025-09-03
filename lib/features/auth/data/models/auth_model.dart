@@ -1,4 +1,3 @@
+import '../../domain/entities/auth.dart';
 
-                import '../../domain/entities/auth.dart';
-
-                class AuthModel extends Auth {}
+class AuthModel extends Auth {}

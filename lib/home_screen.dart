@@ -34,33 +34,21 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             Container(
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
                 gradient: const LinearGradient(
-                  colors: [
-                    Color(0xFF00D4FF),
-                    Color(0xFF8A2BE2),
-                  ], // Biru -> Ungu
+                  colors: [Color(0xFF00D4FF), Color(0xFF8A2BE2)],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
-                borderRadius: BorderRadius.circular(50),
+                border: Border.all(color: Colors.white, width: 1),
               ),
-              padding: const EdgeInsets.all(3),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.transparent, // Transparan
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 50,
-                  vertical: 6,
-                ),
-                child: const Text(
-                  "Enter now",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 6),
+              child: const Text(
+                "Enter now",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
